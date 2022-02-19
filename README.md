@@ -1,26 +1,23 @@
-# even-odd
-program for even odd
 
-def count(lst):
+def count(n):
     even = 0
     odd = 0
-    for i in lst:
+    for i in n:
         if i%2==0:
             even+=1
         else:
             odd+=1
     return even,odd
 
-lst=[]
-number=int(input("enter the length of list"))
-print("enter the numbers")
-for i in range(number):
-    data=int(input())
-    lst.append(data)
+n=list()
+a=int(input("Number of elements in the array:-"))
+n=list(map(int, input("elements of array:-").strip().split()))
+print(n)
 
-evencount,oddcount =count(lst)
+evencount,oddcount =count(n)
 
 print(evencount)
 print(oddcount)
+
 
 
